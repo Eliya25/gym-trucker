@@ -39,6 +39,11 @@ export type TemplateExerciseWithExercise = TemplateExercise & {
 
 export type PlannedSet = { reps: number; weight_kg: number };
 
+export type BodyWeightLog =
+  Database["public"]["Tables"]["body_weight_logs"]["Row"];
+export type ProgressPhoto =
+  Database["public"]["Tables"]["progress_photos"]["Row"];
+
 export type TemplateDetail = WorkoutTemplate & {
   template_exercises: TemplateExerciseWithExercise[];
 };

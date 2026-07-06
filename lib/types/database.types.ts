@@ -190,6 +190,57 @@ export type Database = {
           },
         ];
       };
+      body_weight_logs: {
+        Row: {
+          id: string;
+          user_id: string;
+          logged_on: string;
+          weight_kg: number;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          user_id?: string;
+          logged_on?: string;
+          weight_kg: number;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          user_id?: string;
+          logged_on?: string;
+          weight_kg?: number;
+          created_at?: string;
+        };
+        Relationships: [];
+      };
+      progress_photos: {
+        Row: {
+          id: string;
+          user_id: string;
+          taken_on: string;
+          storage_path: string;
+          note: string | null;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          user_id?: string;
+          taken_on?: string;
+          storage_path: string;
+          note?: string | null;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          user_id?: string;
+          taken_on?: string;
+          storage_path?: string;
+          note?: string | null;
+          created_at?: string;
+        };
+        Relationships: [];
+      };
       workout_templates: {
         Row: {
           id: string;
